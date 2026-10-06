@@ -7,8 +7,8 @@ class Solution {
             int second=target-nums[i];
             if(map.containsKey(second))
             {
-                list.add(nums[i]);
-                list.add(second);
+                list.add(i);
+                list.add(map.get(second));
             }
             map.put(nums[i],i);
         }
