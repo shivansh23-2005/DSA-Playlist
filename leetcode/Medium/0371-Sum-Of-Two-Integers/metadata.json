@@ -1,0 +1,19 @@
+{
+  "question_id": "371",
+  "title": "Sum of Two Integers",
+  "title_slug": "sum-of-two-integers",
+  "difficulty": "Medium",
+  "language": "java",
+  "url": "https://leetcode.com/problems/sum-of-two-integers/",
+  "tags": [
+    "Math",
+    "Bit Manipulation"
+  ],
+  "description": "<p>Given two integers <code>a</code> and <code>b</code>, return <em>the sum of the two integers without using the operators</em> <code>+</code> <em>and</em> <code>-</code>.</p>\n\n<p>&nbsp;</p>",
+  "examples": "<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> a = 1, b = 2\n<strong>Output:</strong> 3\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> a = 2, b = 3\n<strong>Output:</strong> 5\n</pre>",
+  "constraints": "<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>-1000 &lt;= a, b &lt;= 1000</code></li>\n</ul>",
+  "synced_at": "2026-10-15T16:08:23.332Z",
+  "platform": "leetcode",
+  "platformId": "leetcode",
+  "problemId": "371"
+}
