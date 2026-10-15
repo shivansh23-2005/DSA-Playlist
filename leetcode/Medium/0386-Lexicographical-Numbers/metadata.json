@@ -1,0 +1,19 @@
+{
+  "question_id": "386",
+  "title": "Lexicographical Numbers",
+  "title_slug": "lexicographical-numbers",
+  "difficulty": "Medium",
+  "language": "java",
+  "url": "https://leetcode.com/problems/lexicographical-numbers/",
+  "tags": [
+    "Depth-First Search",
+    "Trie"
+  ],
+  "description": "<p>Given an integer <code>n</code>, return all the numbers in the range <code>[1, n]</code> sorted in lexicographical order.</p>\n\n<p>You must write an algorithm that runs in&nbsp;<code>O(n)</code>&nbsp;time and uses <code>O(1)</code> extra space.&nbsp;</p>\n\n<p>&nbsp;</p>",
+  "examples": "<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> n = 13\n<strong>Output:</strong> [1,10,11,12,13,2,3,4,5,6,7,8,9]\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> n = 2\n<strong>Output:</strong> [1,2]\n</pre>",
+  "constraints": "<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>\n</ul>",
+  "synced_at": "2026-10-15T15:52:45.093Z",
+  "platform": "leetcode",
+  "platformId": "leetcode",
+  "problemId": "386"
+}
