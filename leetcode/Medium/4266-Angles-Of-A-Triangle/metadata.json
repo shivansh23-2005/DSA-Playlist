@@ -1,0 +1,20 @@
+{
+  "question_id": "4266",
+  "title": "Angles of a Triangle",
+  "title_slug": "angles-of-a-triangle",
+  "difficulty": "Medium",
+  "language": "java",
+  "url": "https://leetcode.com/problems/angles-of-a-triangle/",
+  "tags": [
+    "Array",
+    "Math",
+    "Geometry"
+  ],
+  "description": "<p>You are given a positive integer array <code>sides</code> of length 3.</p>\n\n<p>Determine if there exists a triangle with <strong>positive</strong> area whose three side lengths are given by the elements of <code>sides</code>.</p>\n\n<p>If such a triangle exists, return an array of three floating-point numbers representing its internal angles (in <strong>degrees</strong>), <strong>sorted</strong> in <strong>non-decreasing</strong> order. Otherwise, return an empty array.</p>\n\n<p>Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>\n\n<p>&nbsp;</p>",
+  "examples": "<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">sides = [3,4,5]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[36.86990,53.13010,90.00000]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>You can form a right-angled triangle with side lengths 3, 4, and 5. The internal angles of this triangle are approximately 36.869897646, 53.130102354, and 90 degrees respectively.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">sides = [2,4,2]</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">[]</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>You cannot form a triangle with positive area using side lengths 2, 4, and 2.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>sides.length == 3</code></li>\n\t<li><code>1 &lt;= sides[i] &lt;= 1000</code></li>\n</ul>",
+  "constraints": "",
+  "synced_at": "2026-10-15T16:09:59.064Z",
+  "platform": "leetcode",
+  "platformId": "leetcode",
+  "problemId": "4266"
+}
