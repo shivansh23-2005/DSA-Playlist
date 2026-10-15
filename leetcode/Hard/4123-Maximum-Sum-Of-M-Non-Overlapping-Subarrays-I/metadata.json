@@ -1,0 +1,24 @@
+{
+  "question_id": "4123",
+  "title": "Maximum Sum of M Non-Overlapping Subarrays I",
+  "title_slug": "maximum-sum-of-m-non-overlapping-subarrays-i",
+  "difficulty": "Hard",
+  "language": "java",
+  "url": "https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Prefix Sum",
+    "Monotonic Queue"
+  ],
+  "description": "<p>You are given an integer array <code>nums</code> of length <code>n</code>, and three integers <code>m</code>, <code>l</code>, and <code>r</code>.</p>\n\n<p>Your task is to select <strong>at least</strong> one and <strong>at most</strong> <code>m</code> <strong>non-overlapping <span data-keyword=\"subarray-nonempty\">subarrays</span></strong> from <code>nums</code> such that:</p>\n\n<ul>\n\t<li>Each selected <strong>subarray</strong> has a length between <code>[l, r]</code> (inclusive).</li>\n\t<li>The total sum of all selected <strong>subarrays</strong> is <strong>maximized</strong>.</li>\n</ul>\n\n<p>Return the <strong>maximum</strong> total sum you can achieve.</p>\n\n<p>&nbsp;</p>",
+  "examples": "<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [4,1,-5,2], m = 2, l = 1, r = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">7</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal strategy is to:</p>\n\n<ul>\n\t<li>Select the subarray <code>[4, 1]</code> with sum <code>4 + 1 = 5</code> and the subarray <code>[2]</code> with sum 2. Both subarrays have length between <code>[l, r]</code>.</li>\n\t<li>The total sum of these subarrays is <code>5 + 2 = 7</code>, which is the maximum achievable sum with at most <code>m = 2</code> subarrays.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [1,0,3,4], m = 2, l = 1, r = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">8</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>One optimal strategy is to:</p>\n\n<ul>\n\t<li>Select the subarray <code>[1]</code> with sum <code>1</code> and the subarray <code>[3, 4]</code> with sum <code>3 + 4 = 7</code>. Both subarrays have length between <code>[l, r]</code>.</li>\n\t<li>The total sum of these subarrays is <code>1 + 7 = 8</code>, which is the maximum achievable sum with at most <code>m = 2</code> subarrays.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [-1,7,-4], m = 1, l = 2, r = 3</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">6</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>Select the subarray <code>[-1, 7]</code> from <code>nums</code> which has length between <code>[l, r]</code>.</li>\n\t<li>The total sum of this subarray is <code>-1 + 7 = 6</code>, which is the maximum achievable sum with at most <code>m = 1</code> subarray.</li>\n</ul>\n</div>\n\n<p><strong class=\"example\">Example 4:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">nums = [-3,-4,-1], m = 2, l = 1, r = 2</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">-1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<ul>\n\t<li>All subarrays of <code>nums</code> have negative sums. The optimal strategy is to select the subarray <code>[-1]</code>, which has length between <code>[l, r]</code>.</li>\n\t<li>The total sum of this subarray is -1, which is the maximum achievable sum with at most <code>m = 2</code> subarrays.</li>\n</ul>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n == nums.length &lt;= 1000</code></li>\n\t<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup>​​​​​​​</code></li>\n\t<li><code>1 &lt;= m &lt;= n</code></li>\n\t<li><code>1 &lt;= l &lt;= r &lt;= n</code></li>\n</ul>",
+  "constraints": "",
+  "synced_at": "2026-10-15T16:04:31.189Z",
+  "platform": "leetcode",
+  "platformId": "leetcode",
+  "problemId": "4123"
+}
