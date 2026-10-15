@@ -1,0 +1,77 @@
+# Find All Duplicates in an Array
+
+**Difficulty:** Medium  
+**Topics:** Array, Hash Table, Sorting  
+**LeetCode URL:** [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
+
+## Problem Description
+
+<p>Given an integer array <code>nums</code> of length <code>n</code> where all the integers of <code>nums</code> are in the range <code>[1, n]</code> and each integer appears <strong>at most</strong> <strong>twice</strong>, return <em>an array of all the integers that appears <strong>twice</strong></em>.</p>
+
+<p>You must write an algorithm that runs in <code>O(n)</code> time and uses only <em>constant</em> auxiliary space, excluding the space needed to store the output</p>
+
+<p>&nbsp;</p>
+
+## Examples
+
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> nums = [4,3,2,7,8,2,3,1]
+<strong>Output:</strong> [2,3]
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [1,1,2]
+<strong>Output:</strong> [1]
+</pre><p><strong class="example">Example 3:</strong></p>
+<pre><strong>Input:</strong> nums = [1]
+<strong>Output:</strong> []
+</pre>
+
+## Constraints
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == nums.length</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= nums[i] &lt;= n</code></li>
+	<li>Each element in <code>nums</code> appears <strong>once</strong> or <strong>twice</strong>.</li>
+</ul>
+
+## Solution
+
+```java
+// LeetCode Problem: Find All Duplicates in an Array
+// Link: https://leetcode.com/problems/find-all-duplicates-in-an-array/
+// Difficulty: Medium
+// Language: java
+
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        HashMap<Integer,Integer>map=new HashMap<>();
+        ArrayList<Integer>result=new ArrayList<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+        }
+        for(Map.Entry<Integer,Integer>entry:map.entrySet())
+        {
+            if(entry.getValue()>1)
+            {
+                result.add(entry.getKey());
+            }
+        }
+        return result;
+
+        
+    }
+}
+```
+
+---
+<div align="center">
+
+**🔄 Synced with [CommitSync](https://www.google.com/search?q=CommitSync+extension)**
+
+*Automatically organized and synced by CommitSync.*
+
+</div>
