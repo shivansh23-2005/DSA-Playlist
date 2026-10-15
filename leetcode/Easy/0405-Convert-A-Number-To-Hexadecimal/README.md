@@ -1,0 +1,69 @@
+# Convert a Number to Hexadecimal
+
+**Difficulty:** Easy  
+**Topics:** Math, String, Bit Manipulation  
+**LeetCode URL:** [Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)
+
+## Problem Description
+
+<p>Given a 32-bit integer <code>num</code>, return <em>a string representing its hexadecimal representation</em>. For negative integers, <a href="https://en.wikipedia.org/wiki/Two%27s_complement" target="_blank">two&rsquo;s complement</a> method is used.</p>
+
+<p>All the letters in the answer string should be lowercase characters, and there should not be any leading zeros in the answer except for the zero itself.</p>
+
+<p><strong>Note:&nbsp;</strong>You are not allowed to use any built-in library method to directly solve this problem.</p>
+
+<p>&nbsp;</p>
+
+## Examples
+
+<p><strong class="example">Example 1:</strong></p>
+<pre><strong>Input:</strong> num = 26
+<strong>Output:</strong> "1a"
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> num = -1
+<strong>Output:</strong> "ffffffff"
+</pre>
+
+## Constraints
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>-2<sup>31</sup> &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+
+## Solution
+
+```java
+// LeetCode Problem: Convert a Number to Hexadecimal
+// Link: https://leetcode.com/problems/convert-a-number-to-hexadecimal/
+// Difficulty: Easy
+// Language: java
+
+class Solution {
+    public String toHex(int num) {
+        if (num == 0) return "0";
+
+        String hex = "";
+        String digits = "0123456789abcdef";
+
+        while (num != 0 && hex.length() < 8) {
+            int rem = num & 15;
+            hex = digits.charAt(rem) + hex;
+            num >>= 4;
+        }
+        return hex;
+    }
+}
+
+```
+
+---
+<div align="center">
+
+**🔄 Synced with [CommitSync](https://www.google.com/search?q=CommitSync+extension)**
+
+*Automatically organized and synced by CommitSync.*
+
+</div>
