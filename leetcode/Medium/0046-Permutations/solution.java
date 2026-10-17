@@ -5,32 +5,27 @@
 
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
-        List<Integer>curr=new ArrayList<>();
-        List<List<Integer>>result=new ArrayList<>();
-          permutation(nums,0,curr,result);
-          return result;
+        List<List<Integer>>ans=new ArrayList<>();
+        List<Integer>list=new ArrayList<>();
+        solve(nums,0,list,ans);
+        return ans;
+        
     }
-    void permutation(int nums[],int index,List<Integer>curr,List<List<Integer>>result)
+    public static void solve(int nums[],int index, List<Integer>list,List<List<Integer>>ans)
     {
-       if (index == nums.length) {
-    result.add(new ArrayList<>(curr));
-    return;
-}
-
-        for(int i=index;i<nums.length;i++)
+         if(list.size()==nums.length)
+            {
+                ans.add(list);
+                return;
+            }
+        for(int i=0;i<nums.length;i++)
         {
-             swap(nums, i, index);
-            curr.add(nums[index]);
-            permutation(nums, index + 1, curr, result);
-            curr.remove(curr.size() - 1);
-             swap(nums, i, index);
-        }
+            if(!list.contains(nums[i]))
+            {
+            list.add(nums[i]);
+            solve(nums,index+1,new ArrayList<>(list),ans);
+            list.remove(list.size()-1);
+            }
+        }                                                                                                                                                                                             
     }
-    void swap(int[] nums, int i, int j) {
-    int temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
-}
-
-
 }
