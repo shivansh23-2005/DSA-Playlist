@@ -80,14 +80,10 @@ class Solution {
         solve(root,0,targetSum,list,ans);
         return ans;
     }
-    void solve(TreeNode root,int csum,int target,List<Integer>list,List<List<Integer>>ans)
-    {
-        if(root==null)
-        {
-            return;
-        }
-        list.add(root.val);
+    public static void solve(TreeNode root,int csum,int target,List<Integer>list, List<List<Integer>>ans){
+        if(root==null) return;
         csum+=root.val;
+           list.add(root.val);
         if(root.left==null && root.right==null)
         {
             if(csum==target)
@@ -95,17 +91,15 @@ class Solution {
                 ans.add(list);
                 return;
             }
+            else
+            {
+                list.remove(list.size()-1);
+            }
         }
         if(root.left!=null)
-        {
-            solve(root.left,csum,target,new ArrayList<>(list),ans);
-        }
+        solve(root.left,csum,target,new ArrayList<>(list),ans);
         if(root.right!=null)
-        {
-                 solve(root.right,csum,target,new ArrayList<>(list),ans);
-        }
-          list.remove(list.size()-1);
-            return;
+        solve(root.right,csum,target,new ArrayList<>(list),ans);
     }
 }
 ```
